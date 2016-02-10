@@ -34,4 +34,12 @@ myApp.controller('mainController',['$scope','$timeout','$filter',function($scope
         {rulename: "Must be unique"},
         {rulename: "Must be cool"}
     ]
-}])
+}]);
+
+// Second Controller
+
+myApp.controller('secondController',['$scope',function($scope){
+    
+    $scope.name = "Second Controller";
+    
+}]);
