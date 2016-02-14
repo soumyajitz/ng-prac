@@ -1,0 +1,25 @@
+<a href="#/home">Back to Prev Page</a>
+
+<h1>Select number of days for future forecast:
+    <a href="#/forecast/2">2</a> | <a href="#/forecast/3">3</a> | <a href="#/forecast/4">4</a> | <a href="#/forecast/5">5</a> | <a href="#/forecast/6">6</a> | <a href="#/forecast/7">7</a>
+</h1>
+<h2>{{city}} Forecast for the next {{day}} days</h2>
+<hr>
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    {{ convDate(w.dt) | date:'MMM d,y' }}
+                </div>
+  <div class="panel-body">
+      <h4>Daytime Temp:{{convertToFah(w.temp.day)}} </h4>
+      <br>
+    Max Temp : {{convertToFah(w.temp.max)}}
+      <br>
+    Min Temp: {{convertToFah(w.temp.min)}}
+  </div>
+</div>
+        </div>
+    </div>
+</div>
