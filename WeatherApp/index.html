@@ -1,0 +1,21 @@
+<html ng-app="weatherApp">
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+    <body>
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#/home">Home</a></li>
+    <li><a href="#/forecast">Forecast</a></li>
+</ul>
+            <div ng-view></div>
+            
+    <script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.3.0-rc.1/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="appWeather.js"></script>
+    </body>
+</html>
